@@ -61,7 +61,7 @@ public class ProfileManagement {
                 case "6":
                     System.out.print("\n Nhap ID nhan vien can xoa:");
                     String id = sc.nextLine().trim();
-                    deleteEmployee(id);
+                    removeEmployee(id);
                     break;
                 case "7":
                     System.out.println("Thoat chuong trinh");
@@ -95,7 +95,7 @@ public class ProfileManagement {
         }
     }
 
-    private void deleteEmployee(String id) {
+    private void removeEmployee(String id) {
         System.out.println("\n>> Danh sach nhan vien");
         // check danh sach rong
         if (index == 0) {
