@@ -11,7 +11,9 @@ import java.util.Scanner;
 public class Person {
     // Lớp con chỉ có thể kế thừa các thuộc tính public và protected. Không kế thừa
     // private
-    protected String id, name, email;
+    protected String id;
+    protected String name;    
+    protected String email;
     protected boolean gender;
 
     // hàm khởi tạo không tham số
@@ -60,5 +62,13 @@ public class Person {
     @Override
     public String toString() {        
         return id + ", " + name + ", " + email + ", " + (gender ? "nam" : "nu");
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getId() {
+        return id;
     }
 }
